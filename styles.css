@@ -6,10 +6,13 @@ body{
     color: #15ff00;
     background-color: black;
     text-align: center;
-    overflow: hidden;
-    position: absolute;
-    top: 10%;
-    left: 40%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 input {
@@ -54,14 +57,13 @@ button {
 }
 
 ul, ol {
-    list-style-position: inside; /* Keep bullets/numbers inside the list area */
-    text-align: left; /* Align text to the left for list items */
-    display: inline-block; /* Center the block of lists */
-    padding-left: 20px; /* Add padding to the left of list to position numbers and bullets */
-    margin: 0 auto; /* Removes default margin and centers the list in its container */
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0 auto;
 }
 
-/* Apply specific margin and padding for list items if needed */
 li {
     margin: 0;
     padding: 0;
@@ -75,3 +77,62 @@ li {
     color: rgba(255, 255, 255, 0.577);
     padding: 20px;
 };
+
+@media(max-width: 568px) {
+    body {
+        font-family: "Jersey 15", sans-serif;
+        width: 100%;
+        height: 100%;
+        color: #15ff00;
+        background-color: black;
+        text-align: center;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 40px;
+    }
+
+    input, button {
+        background-color: #222831;
+        color: #EEEEEE;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 0.2rem;
+        border: none;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    input[type=submit], button {
+        background-color: #15ff00;
+        color: #000000;
+        min-width: unset;
+        width: 80%;
+    }
+
+    button {
+        margin-top: 8px; /* Adicionando margem acima do botão */
+    }
+
+    ul {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    #time-container {
+        top: 0;
+        right: 0;
+        position: fixed;
+        color: rgba(255, 255, 255, 0.577);
+        padding: 20px;
+    }
+}

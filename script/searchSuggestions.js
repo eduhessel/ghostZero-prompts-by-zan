@@ -44,8 +44,7 @@ $(document).ready(function () {
         $('#suggestionsList').text('Suggestions have been deleted. Type something to come up with suggestions');
         setTimeout(function() {
             $('#suggestionsList').empty();
-        // Limpa as sugestões após 5 segundos
-        }, 5000); // 5000 milissegundos = 5 segundos
+        }, 5000);
     }
 
 
