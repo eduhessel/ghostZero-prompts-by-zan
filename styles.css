@@ -39,6 +39,9 @@ input {
 
 .text-span {
     color: #EEEEEE !important;
+    b {
+        color: #15ff00;
+    }
 }
 
 .content-search-google {
@@ -171,6 +174,9 @@ li {
     .text-span {
         color: #EEEEEE !important;
         margin-left: 32px !important;
+        b {
+            color: #15ff00;
+        }
     }
 
     .content-search-google {
