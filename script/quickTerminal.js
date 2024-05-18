@@ -85,6 +85,11 @@ function handleCommand(form) {
             outputDiv.innerHTML = "Accessing owner's identity";
             window.location.href = "pages/about.html"
             break;
+        case "roadmap":
+        case "newfeature":
+            outputDiv.innerHTML = "Accessing owner's identity";
+            window.location.href = "pages/roadmap.html"
+            break;
         case "portfolio":
             outputDiv.innerHTML = "Navigating to portfolio";
             window.open("https://eduardohessel.framer.website");
