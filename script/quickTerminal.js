@@ -136,7 +136,7 @@ function showNotification() {
     notification.innerHTML = `
         <div class="container-notification">
             <img src="../../../static/img/check-icon.svg" alt="Imagem check"/>
-            <h4>Sucesso! A página foi aberta</h4>
+            <h4>Success! The page has been opened</h4>
         </div>
     `;
 
