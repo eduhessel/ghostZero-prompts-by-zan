@@ -17,6 +17,10 @@ function handleCommand(form) {
         return false;
     }
 
+    if (checkCommandExists(command)) {
+        showNotification();
+    }
+
     switch (command) {
         case "yt":
         case "video":
@@ -85,6 +89,10 @@ function handleCommand(form) {
             outputDiv.innerHTML = "Navigating to portfolio";
             window.open("https://eduardohessel.framer.website");
             break;
+        case "linkedin":
+            outputDiv.innerHTML = "Navigating to portfolio";
+            window.open("https://www.linkedin.com/in/eduardo-hessel/");
+            break;
         case "cv":
             outputDiv.innerHTML = "Navigating to curriculum";
             window.open("https://read.cv/duwdu");
@@ -103,6 +111,67 @@ function handleCommand(form) {
             }
     }
     return false;
+}
+
+function checkCommandExists(command) {
+    const validCommands = [
+        "yt", "video", "youtube",
+        "busca", "search", "google",
+        "gt", "translate", "tradutor",
+        "git", "github", "gm", "mail",
+        "gmail", "outlook", "email",
+        "t", "tw", "twitch", "gpt",
+        "chat", "chatgpt", "youtubedownloader",
+        "ytd", "hello", "hi", "hacker",
+        "aboutme", "about", "portfolio",
+        "linkedin", "cv"
+    ];
+    return validCommands.includes(command);
+}
+
+function showNotification() {
+    const notification = document.createElement('div');
+    notification.id = 'notification';
+    notification.className = 'notification';
+    notification.innerHTML = `
+        <div class="container-notification">
+            <img src="../../../static/img/check-icon.svg" alt="Imagem check"/>
+            <h4>Sucesso! A página foi aberta</h4>
+        </div>
+    `;
+
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.backgroundColor = 'green';
+    notification.style.color = '#fff';
+    notification.style.padding = '10px 20px';
+    notification.style.borderRadius = '4px';
+    notification.style.display = 'none';
+    notification.style.zIndex = '1000';
+
+    const containerNotification = notification.querySelector('.container-notification');
+    containerNotification.style.display = 'flex';
+    containerNotification.style.alignItems = 'center';
+    containerNotification.style.justifyContent = 'center';
+
+    const h4 = notification.querySelector('h4');
+    h4.style.fontSize = '12px';
+    h4.style.fontWeight = '600';
+    h4.style.fontFamily = 'Inter, sans-serif';
+
+    const img = notification.querySelector('img');
+    img.style.width = '20px';
+    img.style.height = '20px';
+    img.style.marginRight = '10px';
+
+    document.body.appendChild(notification);
+
+    notification.style.display = 'block';
+
+    setTimeout(() => {
+        document.body.removeChild(notification);
+    }, 3000);
 }
 
 function processInput(terminalMessage, url) {
