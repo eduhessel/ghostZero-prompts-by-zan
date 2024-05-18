@@ -17,65 +17,59 @@ function handleCommand(form) {
         return false;
     }
 
-
     switch (command) {
         case "y":
         case "yt":
         case "youtube":
-            processInput("Navigating to youtube.com", "https://www.youtube.com"); break;
+            outputDiv.innerHTML = "Navigating to youtube.com";
+            window.open("https://www.youtube.com", "_blank");
+            break;
         case "google":
             outputDiv.innerHTML = "Navigating to google.com";
-            window.location.href = "https://www.google.com"; break;
+            window.open("https://www.google.com", "_blank");
+            break;
         case "gt":
         case "translate":
-        case "googletranslate":
             outputDiv.innerHTML = "Navigating to translate.google.com";
-            window.location.href = "https://translate.google.com"; break;
+            window.open("https://translate.google.com", "_blank");
+            break;
         case "git":
         case "github":
             outputDiv.innerHTML = "Navigating to github.com";
-            window.location.href = "https://www.github.com"; break;
+            window.open = ("https://www.github.com", "_blank");
+            break;
         case "gm":
         case "mail":
         case "gmail":
             outputDiv.innerHTML = "Navigating to gmail.com";
-            window.location.href = "https://www.gmail.com"; break;
+            window.open = ("https://www.gmail.com", "_blank");
+            break;
         case "t":
         case "tw":
         case "twitch":
             outputDiv.innerHTML = "Navigating to twitch.com";
-            window.location.href = "https://www.twitch.com"; break;
+            window.open = ("https://www.twitch.com", "_blank");
+            break;
         case "gpt":
         case "chat":
         case "chatgpt":
             outputDiv.innerHTML = "Navigating to openai.com";
-            window.location.href = "https://chat.openai.com/"; break;
-        case "lock":
-            window.location.href = "/lock.js"; break;
-        case "minigame":
-        case "terminalminigame":
-        case "passwordminigame":
-        case "falloutminigame":
-            outputDiv.innerHTML = "Opening Minigame...";
-            window.location.href = "/passwordminigame.js"; break;
+            window.open = ("https://chat.openai.com", "_blank");
+            break;
         case "youtubedownloader":
         case "ytd":
             outputDiv.innerHTML = "Accessing Youtube Mp3 Downloads...";
-            window.location.href = "https://ytmp3.nu/";
+            window.open = ("https://ytmp3.nu", "_blank");
             break;
-        //==============================================================
-        //Local
-        //==============================================================
         case "hello":
         case "hi":
-            outputDiv.innerHTML = "꧁We🙿LL HELL0 ▜tHeRE..▍꧂▚"; break;
-
+            outputDiv.innerHTML = "꧁We🙿LL HELL0 ▜tHeRE..▍꧂▚";
+            break;
         case "aboutme":
         case "about":
             outputDiv.innerHTML = "Accessing owner's identity";
             window.location.href = "pages/about.html"
             break;
-
         default:
             console.log(form.query.value);
             if (form.query.value == formRepeatCheck) {
@@ -89,9 +83,7 @@ function handleCommand(form) {
                 break;
             }
     }
-
     return false;
-    //visit info
 }
 
 function processInput(terminalMessage, url) {
