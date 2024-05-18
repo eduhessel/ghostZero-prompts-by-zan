@@ -45,7 +45,7 @@
     z-index: 1;  /* Ensure the image is above the pseudo-element */
     animation: glow-animation 0.1s infinite alternate;  /* Animation for pulsing effect */
   }
-  
+
   @keyframes glow-animation {
     0% {
       transform: scale(0.05);  /* Start from a visible size */
@@ -56,4 +56,3 @@
       opacity: 1;  /* Fully visible */
     }
   }
-  
