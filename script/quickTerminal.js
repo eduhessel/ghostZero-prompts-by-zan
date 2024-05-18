@@ -85,6 +85,10 @@ function handleCommand(form) {
             outputDiv.innerHTML = "Navigating to portfolio";
             window.open("https://eduardohessel.framer.website");
             break;
+        case "cv":
+            outputDiv.innerHTML = "Navigating to curriculum";
+            window.open("https://read.cv/duwdu");
+            break;
         default:
             console.log(form.query.value);
             if (form.query.value == formRepeatCheck) {
