@@ -18,52 +18,63 @@ function handleCommand(form) {
     }
 
     switch (command) {
-        case "y":
         case "yt":
+        case "video":
         case "youtube":
             outputDiv.innerHTML = "Navigating to youtube.com";
-            window.open("https://www.youtube.com", "_blank");
+            window.open("https://www.youtube.com");
             break;
+        case "busca":
+        case "search":
         case "google":
             outputDiv.innerHTML = "Navigating to google.com";
-            window.open("https://www.google.com", "_blank");
+            window.open("https://www.google.com/");
             break;
         case "gt":
         case "translate":
+        case "tradutor":
             outputDiv.innerHTML = "Navigating to translate.google.com";
-            window.open("https://translate.google.com", "_blank");
+            window.open("https://translate.google.com");
             break;
         case "git":
         case "github":
             outputDiv.innerHTML = "Navigating to github.com";
-            window.open = ("https://www.github.com", "_blank");
+            window.open("https://github.com/");
             break;
         case "gm":
         case "mail":
         case "gmail":
             outputDiv.innerHTML = "Navigating to gmail.com";
-            window.open = ("https://www.gmail.com", "_blank");
+            window.open("https://www.gmail.com");
+            break;
+        case "outlook":
+        case "email":
+            outputDiv.innerHTML = "Navigating to outlook.live.com";
+            window.open("https://outlook.live.com/");
             break;
         case "t":
         case "tw":
         case "twitch":
             outputDiv.innerHTML = "Navigating to twitch.com";
-            window.open = ("https://www.twitch.com", "_blank");
+            window.open("https://www.twitch.tv/");
             break;
         case "gpt":
         case "chat":
         case "chatgpt":
             outputDiv.innerHTML = "Navigating to openai.com";
-            window.open = ("https://chat.openai.com", "_blank");
+            window.open("https://chat.openai.com/");
             break;
         case "youtubedownloader":
         case "ytd":
             outputDiv.innerHTML = "Accessing Youtube Mp3 Downloads...";
-            window.open = ("https://ytmp3.nu", "_blank");
+            window.open("https://ytmp3.nu");
             break;
         case "hello":
         case "hi":
             outputDiv.innerHTML = "꧁We🙿LL HELL0 ▜tHeRE..▍꧂▚";
+            break;
+        case "hacker":
+            outputDiv.innerHTML = "You are GOAT!";
             break;
         case "aboutme":
         case "about":
@@ -72,7 +83,7 @@ function handleCommand(form) {
             break;
         case "portfolio":
             outputDiv.innerHTML = "Navigating to portfolio";
-            window.open("https://eduardohessel.framer.website", "_blank");
+            window.open("https://eduardohessel.framer.website");
             break;
         default:
             console.log(form.query.value);
