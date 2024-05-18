@@ -70,6 +70,10 @@ function handleCommand(form) {
             outputDiv.innerHTML = "Accessing owner's identity";
             window.location.href = "pages/about.html"
             break;
+        case "portfolio":
+            outputDiv.innerHTML = "Navigating to portfolio";
+            window.open("https://eduardohessel.framer.website", "_blank");
+            break;
         default:
             console.log(form.query.value);
             if (form.query.value == formRepeatCheck) {
