@@ -95,12 +95,16 @@ function handleCommand(form) {
             window.open("https://eduardohessel.framer.website");
             break;
         case "linkedin":
-            outputDiv.innerHTML = "Navigating to portfolio";
+            outputDiv.innerHTML = "Navigating to linkedin";
             window.open("https://www.linkedin.com/in/eduardo-hessel/");
             break;
         case "cv":
             outputDiv.innerHTML = "Navigating to curriculum";
             window.open("https://read.cv/duwdu");
+            break;
+        case "colors":
+            outputDiv.innerHTML = "Navigating to Color Hunt";
+            window.open("https://colorhunt.co/palettes/dark");
             break;
         default:
             console.log(form.query.value);
