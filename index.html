@@ -22,12 +22,13 @@
           <form onsubmit="return handleCommand(this)">
               <div style="position: relative; display: inline-block; right : -2px;">
                   <div class="content-quick-terminal">
-                      <span style="text-decoration: none; color: #15ff00;" tabindex="-1">Quick Terminal</a> </span>
-                      <div>
-                          <input id="commandInput" type="text" name="query" placeholder="Command..." autocomplete="off">
-                          <input type="submit" value="Execute" tabindex="-1">
-                      </div>
-                  </div>
+                        <span tabindex="-1">Quick Terminal</a> </span>
+                        <div>
+                            <input id="commandInput" type="text" name="query" placeholder="Command..." autocomplete="off">
+                            <input type="submit" value="Execute" tabindex="-1">
+                        </div>
+                        <span class="text-span">Try on "Quick Terminal": portfolio</span>
+                    </div>
               </div>
           </form>
           <br>
@@ -37,7 +38,6 @@
                       <div>
                           <span>
                               <a href="https://www.google.com/search"
-                                  style="text-decoration: none; color: #15ff00; transition: color 0.3s, transform 0.3s;"
                                   onmouseover="this.style.color='#ffffff'; this.style.transform='scale(1.1)'; this.innerHTML='Click here to access Google';"
                                   onmouseout="this.style.color='#15ff00'; this.style.transform='scale(1)'; this.innerHTML='Search on Google:';"
                                   tabindex="-1">
