@@ -106,6 +106,11 @@ function handleCommand(form) {
             outputDiv.innerHTML = "Navigating to Color Hunt";
             window.open("https://colorhunt.co/palettes/dark");
             break;
+        case "font":
+        case "fonts":
+            outputDiv.innerHTML = "Navigating to Google Fonts";
+            window.open("https://fonts.google.com/");
+            break;
         default:
             console.log(form.query.value);
             if (form.query.value == formRepeatCheck) {
