@@ -2,7 +2,7 @@
     display: inline-block;
     position: relative;
   }
-  
+
   .glow img {
     display: block;
     width: 200px;  /* Adjust size as needed */
@@ -11,14 +11,14 @@
     z-index: 2;  /* Ensure the image is above the pseudo-element */
     border-radius: 50%;  /* Match the border-radius with your image if it's circular */
   }
-  
+
   .glow::before {
     content: '';
     position: absolute;
-    top: 45%;  /* Centers the pseudo-element vertically */
-    left: 25%;  /* Centers the pseudo-element horizontally */
-    width: 200%;  /* Sufficiently large to allow visible glow */
-    height: 200%;  /* Sufficiently large to allow visible glow */
+    top: 62%;  /* Centers the pseudo-element vertically */
+    left: 86%;  /* Centers the pseudo-element horizontally */
+    width: 100%;  /* Sufficiently large to allow visible glow */
+    height: 100%;  /* Sufficiently large to allow visible glow */
     border-radius: 50%;
     margin-top: -100%;  /* Offset to center the glow */
     margin-left: -100%;  /* Offset to center the glow */
@@ -32,10 +32,10 @@
   .glow::after {
     content: '';
     position: absolute;
-    top: 45%;  /* Centers the pseudo-element vertically */
-    left: 72%;  /* Centers the pseudo-element horizontally */
-    width: 200%;  /* Sufficiently large to allow visible glow */
-    height: 200%;  /* Sufficiently large to allow visible glow */
+    top: 63%;  /* Centers the pseudo-element vertically */
+    left: 114%;  /* Centers the pseudo-element horizontally */
+    width: 100%;  /* Sufficiently large to allow visible glow */
+    height: 100%;  /* Sufficiently large to allow visible glow */
     border-radius: 50%;
     margin-top: -100%;  /* Offset to center the glow */
     margin-left: -100%;  /* Offset to center the glow */
