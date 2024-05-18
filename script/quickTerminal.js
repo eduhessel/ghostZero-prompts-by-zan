@@ -13,7 +13,7 @@ function handleCommand(form) {
     if (CheckDomainEndsList(command))
     {
         outputDiv.innerHTML = "Navigating to " + command;
-        window.location.href = "https://" + command;
+        window.open("https://" + command);
         return false;
     }
 
@@ -89,7 +89,7 @@ function handleCommand(form) {
             console.log(form.query.value);
             if (form.query.value == formRepeatCheck) {
                 outputDiv.innerHTML = "Searching " + form.query.value;
-                window.location.href = "https://www.google.com/search?query=" + form.query.value;
+                window.open("https://www.google.com/search?query=" + form.query.value);
                 break;
             }
             else {
@@ -104,7 +104,7 @@ function handleCommand(form) {
 function processInput(terminalMessage, url) {
     var outputDiv = document.getElementById("terminalOutput");
     outputDiv.innerHTML = terminalMessage;
-    window.location.href = url;
+    window.open(url);
 }
 
 function CheckDomainEndsList(userInput)
