@@ -39,6 +39,8 @@ input {
 
 .text-span {
     color: #EEEEEE !important;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
     b {
         color: #15ff00;
     }
@@ -174,6 +176,8 @@ li {
     .text-span {
         color: #EEEEEE !important;
         margin-left: 32px !important;
+        font-family: "Inter", sans-serif;
+        font-size: 11px;
         b {
             color: #15ff00;
         }
@@ -229,7 +233,7 @@ li {
     #time-container {
         top: 0;
         right: 0;
-        position: fixed;
+        position: absolute;
         color: rgba(255, 255, 255, 0.577);
         padding: 20px;
     }
