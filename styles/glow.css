@@ -56,3 +56,9 @@
       opacity: 1;  /* Fully visible */
     }
   }
+
+@media(max-width: 568px) {
+    .glow {
+      display: none;
+    }
+}
