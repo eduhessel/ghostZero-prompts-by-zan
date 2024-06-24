@@ -92,7 +92,7 @@ function handleCommand(form) {
             break;
         case "portfolio":
             outputDiv.innerHTML = "Navigating to portfolio";
-            window.open("https://eduardohessel.framer.website");
+            window.open("https://eduardohesselportfolio.framer.website/");
             break;
         case "linkedin":
             outputDiv.innerHTML = "Navigating to linkedin";
